@@ -13,6 +13,7 @@ import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -32,6 +33,12 @@ public class SomeTest {
 			GameRunner.playGame(new Random(i));
 		}
 
-		Approvals.verify(new File("C:\\Users\\Administrator\\Documents\\GitHub\\trivia\\java\\src\\test\\java\\com\\adaptionsoft\\games\\trivia\\output.txt"));
+		Scanner myReader = new Scanner(new File("C:\\Users\\Administrator\\Documents\\GitHub\\trivia\\java\\src\\test\\java\\com\\adaptionsoft\\games\\trivia\\output.txt"));
+		StringBuilder data = new StringBuilder();
+		while (myReader.hasNextLine()) {
+			data.append(myReader.nextLine()+"\n");
+		}
+		myReader.close();
+		Approvals.verify(data);
 	}
 }

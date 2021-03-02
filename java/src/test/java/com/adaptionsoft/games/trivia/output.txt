@@ -13375,4 +13375,3 @@ The category is Sports
 Sports Question 1
 Answer was corrent!!!!
 Pat now has 6 Gold Coins.
-[C:\Program Files\Beyond Compare 4\BCompare.exe, C:\Users\Administrator\Documents\GitHub\trivia\java\src\test\java\com\adaptionsoft\games\trivia\output.txt, C:\Users\Administrator\Documents\GitHub\trivia\java\.\src\test\java\com\adaptionsoft\games\trivia\SomeTest.testGameGoldenMaster.approved.txt]
